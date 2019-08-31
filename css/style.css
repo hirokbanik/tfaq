@@ -49,29 +49,55 @@ main {
 
 main section .container {
   margin: auto;
-  padding: 1rem 1rem 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  padding: 2rem 1rem 3rem;
   width: 90%;
+  height: 100%;
   background-color: #00000040;
   border-radius: 0.5rem;
   text-transform: uppercase;
   font-weight: bold;
+  overflow: hidden;
+}
+
+main section .container:not(.hero) {
+  justify-items: center;
 }
 
 main section .container.hero .main {
-  margin: 0 auto 0.25rem;
-  font-size: 1.8rem;
+  margin: 0.5rem 0 0.5rem;
+  font-size: 2.7rem;
 }
 
 main section .container.hero .bottom {
+  margin-bottom: 2rem;
   font-weight: initial;
   font-size: 0.95rem;
   text-align: right;
 }
 
 main section .container .title {
-  font-size: 1.5rem;
+  position: relative;
+  font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+main section .container .title::before, main section .container .title::after {
+  position: absolute;
+  content: " ";
+  border-top: 3px solid #1dd3b0;
+  width: 100%;
+  top: 50%;
+}
+
+main section .container .title::before {
+  right: calc(100% + 0.5rem);
+}
+
+main section .container .title::after {
+  left: calc(100% + 0.5rem);
 }
 
 main section .container .content {
@@ -79,14 +105,16 @@ main section .container .content {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-row-gap: 2rem;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  grid-row-gap: 5rem;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
 .card {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 1rem;
   width: 100%;
-  height: 100%;
   font-weight: initial;
 }
 
@@ -96,22 +124,44 @@ main section .container .content {
 
 .card.showcase .counter {
   font-weight: bold;
-  font-size: 4.5rem;
+  font-size: 5rem;
+  line-height: 4.5rem;
 }
 
-.card.showcase .cta {
-  margin-top: 1rem;
-}
-
+button,
 .btn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   color: #1dd3b0;
   border: 2px solid #1dd3b0;
+  background-color: transparent;
   font-size: 0.85rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: initial;
+  font-style: initial;
   padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
+}
+
+button.center,
+.btn.center {
   margin: auto;
+}
+
+button.left,
+.btn.left {
+  margin-left: 0;
+}
+
+button.right,
+.btn.right {
+  margin-right: 0;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #1dd3b010;
 }
 /*# sourceMappingURL=style.css.map */

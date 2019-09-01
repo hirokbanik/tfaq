@@ -85,7 +85,7 @@ nav {
 
   &.active {
     .hamburger {
-      background-image: url("../img/close.png");
+      background-image: url("../img/Close.png");
       transform: rotate(180deg);
     }
 
@@ -110,7 +110,7 @@ nav {
   .hamburger {
     width: 26px;
     height: 26px;
-    background-image: url("../img/ham.png");
+    background-image: url("../img/Ham.png");
     background-repeat: no-repeat;
     transition: transform 0.5s;
     z-index: inherit;

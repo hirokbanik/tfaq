@@ -1,7 +1,7 @@
 :root {
-  --white: rgba(255, 255, 255, 0.85);
-  --cyan: rgba(29, 211, 176, 0.85);
-  --cyan-light: rgba(29, 211, 176, 0.1);
+  --white: #ffffffcc;
+  --cyan: #1dd3b0;
+  --cyan-light: #1dd3b01a;
 }
 
 *,
@@ -85,7 +85,7 @@ nav {
 
   &.active {
     .hamburger {
-      background-image: url("/img/close.png");
+      background-image: url("../img/close.png");
       transform: rotate(180deg);
     }
 
@@ -110,7 +110,7 @@ nav {
   .hamburger {
     width: 26px;
     height: 26px;
-    background-image: url("/img/ham.png");
+    background-image: url("../img/ham.png");
     background-repeat: no-repeat;
     transition: transform 0.5s;
     z-index: inherit;
@@ -165,17 +165,17 @@ main {
         font-size: 0.95rem;
         text-align: right;
 
-        span {
-          position: relative;
-          &::after {
-            position: absolute;
-            content: " ";
-            border-top: 2px solid var(--cyan);
-            width: 100%;
-            top: calc(50% - 1px);
-            right: calc(100% + 0.5rem);
-          }
-        }
+        // span {
+        //   position: relative;
+        //   &::after {
+        //     position: absolute;
+        //     content: " ";
+        //     border-top: 2px solid var(--cyan);
+        //     width: 100%;
+        //     top: calc(50% - 1px);
+        //     right: calc(100% + 0.5rem);
+        //   }
+        // }
       }
     }
 

@@ -4,6 +4,8 @@ let scrolli = 0,
   scrollf = 0;
 
 window.addEventListener("scroll", e => {
+  if (navbar.classList.contains("active")) return;
+
   scrollf = window.pageYOffset;
   if (scrolli < scrollf) navbar.classList.add("scrollDown");
   else navbar.classList.remove("scrollDown");

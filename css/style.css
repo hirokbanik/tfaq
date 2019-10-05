@@ -304,12 +304,13 @@ main {
 
 .content.cards {
   margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   .content.cards {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     grid-column-gap: 1rem;

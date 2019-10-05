@@ -135,6 +135,9 @@ main {
   background-color: #00000080;
   border-radius: 0.25rem;
   text-align: center;
+  .container:first-child {
+    height: 50%;
+  }
 
   > .title {
     text-align: center;
@@ -183,6 +186,16 @@ main {
     font-weight: bold;
     border: 1px solid var(--cyan);
     border-radius: 0.25rem;
+    text-shadow: 1px 1px var(--cyan-light), 2px 2px var(--cyan-light),
+      3px 3px var(--cyan-light), 4px 4px var(--cyan-light),
+      10px 10px 5px var(--cyan-light);
+
+    @media screen and (min-width: 768px) {
+      font-size: 3rem;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 4rem;
+    }
   }
   .bottom {
     display: none;
@@ -207,6 +220,10 @@ main {
     text-shadow: 1px 1px var(--cyan-light), 2px 2px var(--cyan-light),
       3px 3px var(--cyan-light), 4px 4px var(--cyan-light),
       10px 10px 5px var(--cyan-light);
+
+    @media screen and (min-width: 768px) {
+      font-size: 7rem;
+    }
   }
   .desc {
     text-transform: uppercase;
@@ -214,14 +231,31 @@ main {
     font-weight: bold;
     text-shadow: 1px 1px var(--cyan-light), 2px 2px var(--cyan-light),
       5px 5px 3px var(--cyan-light);
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.content.showcases {
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+
+    .counter {
+      font-size: 5rem;
+    }
+    .desc {
+      font-size: 1.2rem;
+    }
   }
 }
 
 .card {
   border: 1px solid var(--cyan);
   border-radius: 0.25rem;
-  margin-top: 1rem;
-  // text-align: left;
   overflow: hidden;
 
   img {
@@ -237,6 +271,25 @@ main {
 
   &:last-child {
     margin-bottom: 1rem;
+  }
+}
+
+.content.cards {
+  margin-top: 1rem;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    margin-bottom: 1rem;
+
+    .card:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

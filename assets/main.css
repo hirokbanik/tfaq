@@ -1,0 +1,244 @@
+/* prettier-ignore */
+@import url(https://fonts.googleapis.com/css?family=Exo+2:700|Lexend+Deca:regular,italic,700,700italic);
+:root {
+  --cp: 0.5rem 1rem;
+  --primary-color: #1fc2a3;
+  --navlink-color: var(--primary-color);
+  --navlink-font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #212121;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5rem;
+  padding: 1rem 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-transition: background-color 0.3s, height 0.3s;
+  transition: background-color 0.3s, height 0.3s;
+}
+
+nav.active {
+  height: 6rem;
+  background-color: #000000c0;
+}
+
+nav.active a {
+  color: #ffffff;
+}
+
+nav img {
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 0.25rem;
+}
+
+nav ul li:hover > a {
+  color: #ffffff;
+}
+
+nav ul li a {
+  display: inline-block;
+  line-height: 3rem;
+  font-size: var(--navlink-font-size);
+  color: var(--navlink-color);
+  border-bottom: 2px solid var(--primary-color);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+header {
+  margin-top: 5rem;
+  min-height: calc(100vh - 5rem);
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+header img {
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  header img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header img {
+    margin: 0;
+    width: 50%;
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+}
+
+header .group {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media screen and (min-width: 1024px) {
+  header .group {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+header .btn {
+  margin-top: 3rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 1rem 2.5rem 1rem 1.5rem;
+  text-transform: uppercase;
+  border-radius: 9% 91% 90% 10% / 63% 51% 49% 37%;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 0 0.5rem 1rem 0 #1fc2a340;
+          box-shadow: 0 0.5rem 1rem 0 #1fc2a340;
+}
+
+.container {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding: 5rem 2rem;
+  position: relative;
+  border-radius: 0 0 2rem 2rem;
+  -webkit-box-shadow: 0 0.25rem 0.25rem 0 #00000090;
+          box-shadow: 0 0.25rem 0.25rem 0 #00000090;
+}
+
+.hero-text {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-bottom: 0.25rem;
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-text {
+    font-size: 3.5rem;
+  }
+}
+
+.hero-sub-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-sub-text {
+    font-size: 1.5rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+a.scroll-to-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 1.5rem;
+  height: 4rem;
+  width: 3rem;
+  font-size: 0.8rem;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  background: url(./img/up-arrow.svg) no-repeat center center/contain;
+  -webkit-transform: translateY(7rem) scale(0.5);
+          transform: translateY(7rem) scale(0.5);
+  opacity: 0;
+  -webkit-transition: opacity 1s, scale 1s, -webkit-transform 1s;
+  transition: opacity 1s, scale 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s, scale 1s;
+  transition: transform 1s, opacity 1s, scale 1s, -webkit-transform 1s;
+}
+
+a.scroll-to-top.active {
+  opacity: 1;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+/*# sourceMappingURL=main.css.map */

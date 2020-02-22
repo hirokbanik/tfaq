@@ -1,108 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- prettier-ignore -->
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Technology FAQ</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Rubik:300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#212121">
+    <title>TFAQ</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <script src="./assets/main.js" defer></script>
   </head>
-
   <body>
-    <nav class="">
-      <div class="nav-brand">
-        <a href="#"><img src="./img/tfaq.png" alt="tfaq.in" /> </a>
-      </div>
-      <div class="hamburger"></div>
-      <div class="sidebar">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Tutorials</a></li>
-          <li><a href="#">YouTube</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+    <nav>
+      <img src="./assets/img/tfaq.png" alt="tfaq.in" />
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/technologyfaq">Goto YouTube</a>
+        </li>
+        <li><a href="#videos">Videos</a></li>
+      </ul>
     </nav>
-
-    <main>
-      <section>
-        <div class="container hero">
-          <div class="top"><span>Welcome to</span></div>
-          <div class="main">Technology FAQ</div>
-          <div class="bottom">
-            <span>Code like a PRO.</span>
-          </div>
-          <a href="#" class="btn">See Tutorials</a>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <div class="title"><span>Youtube Channel</span></div>
-          <div class="content showcases">
-            <div class="showcase">
-              <div class="counter">43</div>
-              <div class="desc">videos</div>
-              <a href="#" class="btn center">Watch</a>
-            </div>
-            <div class="showcase">
-              <div class="counter">14K+</div>
-              <div class="desc">Subscribers</div>
-              <a href="#" class="btn center">Subscribe</a>
-            </div>
-            <div class="showcase">
-              <div class="counter">1.6M+</div>
-              <div class="desc">Views</div>
-              <a href="#" class="btn center">Youtube</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <div class="title"><span>Tutorials</span></div>
-          <div class="content cards">
-            <div class="card">
-              <a href="#">
-                <img src="img/thumb.png" alt="Thumbnail" />
-                <div class="title">Google Loaing Animation</div>
-              </a>
-            </div>
-            <div class="card">
-              <a href="#">
-                <img src="img/thumb.png" alt="Thumbnail" />
-                <div class="title">Google Loaing Animation</div>
-              </a>
-            </div>
-          </div>
-          <a href="#" class="btn center">More</a>
-        </div>
-      </section>
-      <!-- <section>
-        <div class="container">
-          <div class="title"><span>Projects</span></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <a href="#" class="btn center">More</a>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <div class="title"><span>About</span></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <a href="#" class="btn center">More</a>
-        </div>
-      </section> -->
+    <header id="top" class="container text-center">
+      <img src="./assets/img/header-bg.svg" alt="Header background" />
+      <div class="group">
+        <h1 class="hero-text">TECHNOLOGY FAQ</h1>
+        <p class="hero-sub-text">Learn Web development and much more</p>
+        <!-- prettier-ignore -->
+        <a class="btn" href="https://www.youtube.com/technologyfaq">Watch Videos</a>
+      </div>
+    </header>
+    <main class="container" role="main">
+      <h1 id="videos" class="heading text-center">Videos</h1>
+      <div class="content">
+        <div class="card"></div>
+      </div>
     </main>
-    <footer>
-      <div class="attribution">Made with ❤ by Hirok Banik</div>
-    </footer>
+    <div class="container"></div>
+    <footer></footer>
+    <a class="scroll-to-top" href="#top">TOP</a>
   </body>
 </html>

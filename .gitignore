@@ -1,2 +1,4 @@
-*\*.scss
-*\*.map.css
+assets\*.scss
+assets\*.css.map
+*.map
+*.scss

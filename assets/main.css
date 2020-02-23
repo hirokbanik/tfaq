@@ -50,7 +50,6 @@ nav {
 }
 
 nav.active {
-  height: 6rem;
   background-color: #000000c0;
 }
 
@@ -244,10 +243,6 @@ a.scroll-to-top.active {
 
 footer {
   padding: 1rem 2rem 0rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;

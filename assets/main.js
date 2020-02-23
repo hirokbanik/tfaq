@@ -12,3 +12,6 @@ window.addEventListener("scroll", event => {
     $("a.scroll-to-top").classList.remove("active");
   }
 });
+
+// prettier-ignore
+$("footer").innerHTML += `<p class="text-center" style="font-size:0.9rem;color:#ffffff80">Copyright © ${new Date().getFullYear()} Technology FAQ</p>`;
